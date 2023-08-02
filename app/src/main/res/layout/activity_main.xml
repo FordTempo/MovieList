@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTintMode="add"
+    android:background="@drawable/movie"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/textTitle"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_weight="0.5"
+            android:text="@string/title"
+            android:textColor="#019803"
+            android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:backgroundTint="#019803"
+        android:ems="10"
+        android:hint="Enter song title here"
+        android:inputType="text"
+        android:textColor="#019803" />
+
+
+    <TextView
+        android:id="@+id/textGenre"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_weight="0.5"
+        android:text="@string/genre"
+        android:textColor="#019803"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editGenre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:ems="10"
+        android:hint="Enter genre name here"
+        android:backgroundTint="#019803"
+        android:textColor="#019803"
+        android:inputType="text" />
+
+    <TextView
+        android:id="@+id/textYear"
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:layout_weight="0.5"
+        android:text="@string/year"
+        android:textColor="#019803"
+        android:textSize="20dp" />
+
+    <EditText
+        android:id="@+id/editYear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.5"
+        android:ems="10"
+        android:hint="Enter year of release here"
+        android:backgroundTint="#019803"
+        android:textColor="#019803"
+        android:inputType="text" />
+
+    </LinearLayout>
+
+    <Spinner
+        android:id="@+id/rating"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnInsert"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#019803"
+            android:text="Insert"
+            android:textColor="#FFC800" />
+
+        <Button
+            android:id="@+id/btnShowList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:backgroundTint="#019803"
+            android:text="Show List"
+            android:textColor="#FFC800"/>
+    </LinearLayout>
+
+</LinearLayout>
